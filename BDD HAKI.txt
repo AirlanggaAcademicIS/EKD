@@ -1,0 +1,43 @@
+1.Mengelola data HAKI
+As An 	: Dosen
+I need 	: Mengelola data HAKI
+so that : Saya dapat menambahkan, megubah, dan menghapus data mengenai HAKI yang saya peroleh. Data ini meliputi tahun terbit, judul, jenis HAKI, ruang lingkup, nomor dan posisi dalam HAKI. Selain itu saya dapat mengunggah bukti berupa sertifikat
+
+Scenario 1 : Mengisi sesuai form 
+Given pengguna berada di halaman kolom HAKI
+when pengguna menekan tombol tambah HAKI
+Then pengguna masuk ke dalam halaman form HAKI
+when pengguna mengisi kolom nama_karya with 
+And mengisi kolom nomor_id with HAKI007
+And mengisi kolom judul_haki with Riset Perangkat Lunak
+And mengisi kolom jenis_haki with Penelitian Perusahaan
+And mengisi kolom Status_anggota with ketua
+And pengguna mengupload bukti penugasan
+and pengguna memencet tombol simpan data HAKI
+Then pengguna kembali ke halaman kolom HAKI
+
+scenario 2 : form belum terisi
+Given pengguna berada di alaman kolom HAKI
+when pengguna menekan tombol HAKI
+Then pengguna masuk ke dalam halaman form HAKI
+when pengguna mengisi kolom nama_karya with nama karya
+And tidak mengisi kolom nomor_id
+And mengisi kolom judul_haki with Riset Perangkat Lunak
+And pengguna mengisi jenis_haki with Penelitian Perusahaan
+And mengisi kolom Status_anggota with ketua
+And pengguna mengupload bukti penugasan
+and pengguna memencet tombol simpan data HAKI
+Then muncul pesan “Form belum terisi dengan lengkap”
+
+scenario 3 : belum mengupload bukti penugasan
+Given pengguna berada di alaman kolom HAKI
+when pengguna menekan tombol HAKI
+Then pengguna masuk ke dalam halaman form HAKI
+when pengguna mengisi kolom nama_karya with nama karya
+And tidak mengisi kolom nomor_id
+And mengisi kolom judul_haki with Riset Perangkat Lunak
+And pengguna mengisi jenis_haki with Penelitian Perusahaan
+And mengisi kolom Status_anggota with ketua
+And pengguna tidak mengupload bukti penugasan
+and pengguna menekan tombol simpan data HAKI
+Then muncul pesan “bukti penugasan anda belum terupload”
