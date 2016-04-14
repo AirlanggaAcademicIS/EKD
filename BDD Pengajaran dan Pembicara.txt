@@ -1,0 +1,139 @@
+
+1. Mengelola Data Pendidikan
+As An 		: Tata Usaha
+I need		: Mengelola data pendidikan dan pengajaran
+So that		: Saya dapat menambahkan, mengubah, dan menghapus data mengenai kegiatan pendidikan, pengajaran dosen dan mengunggah bukti SK yang diperoleh dari dekan. Data ini meliputi nama pengajar, kode mata kuliah, nama mata kuliah, jumlah sks, jumlah kelas dan beban yang ditanggung.
+
+Scenario 1 : Mengisi Sesuai Form
+Given pengguna berada di halaman kolom pengajaran
+When pengguna memencet tombol tambah pengajaran
+Then pengguna masuk ke dalam halaman form pengajaran
+When pengguna mengisi kolom Pembina with Bramantyo
+And mengisi kolom kode_mk with SIR003
+And mengisi kolom nama_mk with Rekayasa Perangkat Lunak
+And pengguna mengisi kolom SKS with 2
+And pengguna mengisi kolom jumlah_kelas with 1
+And pengguna mengisi kolom beban_% with 100%
+And pengguna mengupload bukti SK pengajaran
+And pengguna memencet tombol simpan data pengajaran
+Then pengguna kembali ke halaman kolom pengajaran
+
+Scenario 2 : Form Belum Terisi
+Given pengguna berada di halaman kolom pengajaran
+When pengguna memencet tombol tambah pengajaran
+Then pengguna masuk ke dalam halaman form pengajaran
+When pengguna mengisi kolom Pembina with nama dosen
+And tidak mengisi kolom kode_mk
+And mengisi kolom nama_mk with Rekayasa Perangkat Lunak
+And pengguna mengisi kolom SKS with 2
+And pengguna mengisi kolom jumlah_kelas with 1
+And pengguna mengisi kolom beban_% with 100%
+And pengguna mengupload bukti SK pengajaran
+And pengguna memencet tombol simpan data pengajaran
+Then muncul pesan “Form belum terisi dengan lengkap”
+
+Scenario 3 : Belum mengupload SK
+Given pengguna berada di halaman kolom pengajaran
+When pengguna memencet tombol tambah pengajaran
+Then pengguna masuk ke dalam halaman form pengajaran
+When pengguna mengisi kolom Pembina with nama dosen
+And mengisi kolom kode_mk with SIR003
+And mengisi kolom nama_mk with Rekayasa Perangkat Lunak
+And pengguna mengisi kolom SKS with 2
+And pengguna mengisi kolom jumlah_kelas with 1
+And pengguna mengisi kolom beban_% with 100%
+And pengguna tidak mengupload bukti SK pengajaran
+And pengguna memencet tombol simpan data pengajaran
+Then mencul pesan “SK bukti pengajaran anda belum terupload”
+
+
+1. Mengelola Data Pendidikan
+As An 		: Tata Usaha
+I need		: Mengelola data pendidikan dan pengajaran
+So that		: Saya dapat menambahkan, mengubah, dan menghapus data mengenai kegiatan pendidikan, pengajaran dosen dan mengunggah bukti SK yang diperoleh dari dekan. Data ini meliputi nama pengajar, kode mata kuliah, nama mata kuliah, jumlah sks, jumlah kelas dan beban yang ditanggung.
+
+Scenario 1 : Mengisi Sesuai Form
+Given pengguna berada di halaman kolom pengajaran
+When pengguna memencet tombol tambah pengajaran
+Then pengguna masuk ke dalam halaman form pengajaran
+When pengguna mengisi kolom Pembina with nama dosen
+And mengisi kolom kode_mk with SIR003
+And mengisi kolom nama_mk with Rekayasa Perangkat Lunak
+And pengguna mengisi kolom SKS with 2
+And pengguna mengisi kolom jumlah_kelas with 1
+And pengguna mengisi kolom beban_% with 100%
+And pengguna mengupload bukti SK pengajaran
+And pengguna memencet tombol simpan data pengajaran
+Then pengguna kembali ke halaman kolom pengajaran
+
+Scenario 2 : Form Belum Terisi
+Given pengguna berada di halaman kolom pengajaran
+When pengguna memencet tombol tambah pengajaran
+Then pengguna masuk ke dalam halaman form pengajaran
+When pengguna mengisi kolom Pembina with nama dosen
+And tidak mengisi kolom kode_mk
+And mengisi kolom nama_mk with Rekayasa Perangkat Lunak
+And pengguna mengisi kolom SKS with 2
+And pengguna mengisi kolom jumlah_kelas with 1
+And pengguna mengisi kolom beban_% with 100%
+And pengguna mengupload bukti SK pengajaran
+And pengguna memencet tombol simpan data pengajaran
+Then muncul pesan “Form belum terisi dengan lengkap”
+
+Scenario 3 : Belum mengupload SK
+Given pengguna berada di halaman kolom pengajaran
+When pengguna memencet tombol tambah pengajaran
+Then pengguna masuk ke dalam halaman form pengajaran
+When pengguna mengisi kolom Pembina with nama dosen
+And mengisi kolom kode_mk with SIR003
+And mengisi kolom nama_mk with Rekayasa Perangkat Lunak
+And pengguna mengisi kolom SKS with 2
+And pengguna mengisi kolom jumlah_kelas with 1
+And pengguna mengisi kolom beban_% with 100%
+And pengguna tidak mengupload bukti SK pengajaran
+And pengguna memencet tombol simpan data pengajaran
+Then mencul pesan “SK bukti pengajaran anda belum terupload”
+
+
+2. Mengelola data pembicara
+As An 		: Dosen
+I need		: Mengelola data pembicara
+So that		: Saya dapat menambahkan, mengubah, dan menghapus data mengenai kegiatan seminar sebagai pembicara yang telah saya lakukan 
+
+Scenario 1 : Mengisi Sesuai Form
+Given pengguna berada di halaman kolom pembicara
+When pengguna memencet tombol tambah pembicara
+Then pengguna masuk ke dalam halaman form pembicara
+When pengguna mengisi kolom nama_pertemuan with nama pertemuan
+And mengisi kolom judul with judul materi
+And memencet tombol dropdown ruang_lingkup and memilih antara nasional, internasional 
+And pengguna mengisi kolom waktu dan tempat with Surabaya 23 Februari 2017
+And pengguna mengupload bukti penugasan
+And pengguna memencet tombol simpan data pembicara
+Then pengguna kembali ke halaman kolom pembicara
+
+
+Scenario 2 : Form belum terisi
+Given pengguna berada di halaman kolom pembicara
+When pengguna memencet tombol tambah pembicara
+Then pengguna masuk ke dalam halaman form pembicara
+When pengguna mengisi kolom nama_pertemuan with nama pertemuan
+And tidak mengisi kolom judul
+And memencet tombol dropdown ruang_lingkup and memilih antara nasional, internasional 
+And pengguna mengisi kolom waktu dan tempat with Surabaya 23 Februari 2017
+And pengguna mengupload bukti penugasan
+And pengguna memencet tombol simpan data pembicara
+Then muncul pesan “Form belum terisi dengan lengkap”
+
+Scenario 3 : Belum mengupload SK
+Given pengguna berada di halaman kolom pembicara
+When pengguna memencet tombol tambah pembicara
+Then pengguna masuk ke dalam halaman form pembicara
+When pengguna mengisi kolom nama_pertemuan with nama pertemuan
+And mengisi kolom_judul with judul
+And memencet tombol dropdown ruang_lingkup and memilih antara nasional, internasional 
+And pengguna mengisi kolom waktu dan tempat with Surabaya 23 Februari 2017
+And pengguna belum mengupload bukti penugasan
+And pengguna memencet tombol simpan data pembicara
+Then mencul pesan “Bukti penugasan anda belum terupload”
+
