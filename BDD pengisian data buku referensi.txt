@@ -1,0 +1,15 @@
+Skenario : Pengisian Data Buku Referensi
+
+Given	:	Saya sudah login dan berada pada menu Home
+When	:	Saya menekan tombol Buku Referensi
+Then	:	Saya berada pada fitur Buku Referensi
+When	:	Saya menekan tombol Data Buku Referensi
+Then	:	Saya mengisi data Tahun
+Then	:	Saya mengisi data Judul Buku
+Then	:	Saya mengisi data Jumlah Halaman
+Then	:	Saya memilih dropdown menu data Nasional/Internasional
+Then	:	Saya memilih data Penerbit
+Then	:	Saya memilih dropdown menu data Status Keanggotaan Penulis
+When	:	Saya menekan tombol save
+Then	:	Saya melihat tombol konfirmasi yes/no
+And	:	Saya diberi konfirmasi bahwa pengisian sukses	

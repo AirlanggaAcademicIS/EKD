@@ -1,0 +1,12 @@
+Skenario : Upload cover buku referensi
+
+Given	:	Saya berada pada halaman Buku Referensi
+When	:	Saya menekan tombol Upload Cover Buku
+Then	:	Saya melihat pop-up browse letak cover (.jpg)
+When	:	Saya menekan tombol browse
+Then	:	Saya mencari file foto
+When	:	Saya menekan tombol Upload
+Then	:	Saya melihat pop-up yes/no
+When	:	Saya menekan tombol yes
+Then	:	Saya diberi konfirmasi bahawa upload sukses
+And	:	Saya di arahkan ke halaman Buku Referensi
