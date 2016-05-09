@@ -1,0 +1,27 @@
+Mendaftar User Baru
+As an : Tata Usaha
+I need : Mendaftar user baru
+So that : Saya dapat mendaftarkan daftar dosen yang berada di prodi, sehingga dosen dapat mengisi formulir EKD
+
+Scenario 1 : Mengisi sesuai form 
+Given pengguna berada di halaman kolom log in
+when pengguna menekan tombol log in
+Then pengguna masuk ke dalam halaman form register
+when pengguna mengisi data pribadi with 
+And mengisi kolom NIP with 081311633042
+And mengisi kolom nama lengkap with bahana sukma dewa
+And mengisi kolom tahun masuk pegawai with 20 agustus 2002
+and pengguna memencet tombol daftar
+Then pengguna kembali ke halaman kolom log in
+
+Scenario 2 : data tidak lengkap 
+Given pengguna berada di halaman kolom log in
+when pengguna menekan tombol log in
+Then pengguna masuk ke dalam halaman form register
+when pengguna mengisi data pribadi with 
+And mengisi kolom NIP with 081311633042
+And mengisi kolom nama lengkap with (kosong)
+And mengisi kolom tahun masuk pegawai with 20 agustus 2002
+and pengguna memencet tombol daftar
+Then muncul pesan " maaf data yang anda masuka tidak lengkap"
+and pengguna harus mengisi data yang tidak terisi 
