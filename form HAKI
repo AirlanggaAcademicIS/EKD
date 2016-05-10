@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FORMULIR HAKI</title></head>
+<body style="background:url(aventador.jpg);color:#7fff00">
+<h1>FORMULIR HAKI</h1>
+<table border="0">
+<tr>
+<td>Nomor<td>:<td><input type="text" name="nomor"/></td><tr/>
+<tr>
+<td>judul haki<td>:<td><input type="text" name="judul haki"/></td><tr/>
+<tr>
+<td>jenis haki<td>:<td><input type="text" name="jenis haki"/></td><tr/>
+<tr>
+<td>status anggota<td>:<td><input type="date" name="status anggota"/></td><tr/>
+<tr>
+<td>Jenis Kelamin<td>:<td>
+<input type="radio" name="jk" value="Laki-Laki"/>Laki-Laki<br>
+<input type="radio" name="jk" value="Perempuan"/>Perempuan</td><tr/>
+<tr>
+<td>No HP<td>:<td><input type="text" name="no hp"/></td><tr/>
+<tr>
+<td>Alamat Web<td>:<td><input type="url" name="alamat web"/></td><tr/>
+<tr>
+<td>Email<td>:<td><input type="mail" name="email"/></td><tr/>
+<tr>   
+   <td>Kecamatan<td> :
+    <td>
+     <select>
+     <option>Select Kecamatan...</option>
+     <option>wonosari</option>
+     <option>umbulsari</option>
+     <option>Kebunsari</option>
+     <option>Sumbersari</option>
+     <option>Kaliwates</option>
+     <option>Arjasa</option>
+     <option>Jelbuk</option>
+     <option>Ambulu</option>
+     <option>asembagus</option>
+     <option>jangkar</option>
+     <option>---SELECT---</option></select>
+    </td><tr/>
+<tr>
+   <td><input type="submit" name="submit" value="simpan"/></td>
+   <td><input type="Reset" name="Reset" value="Batal"/></td></tr>
+  </table>
+ </body>
+</html> 
