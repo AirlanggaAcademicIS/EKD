@@ -56,7 +56,7 @@
           <!-- menu prile quick info -->
           <div class="profile">
             <div class="profile_pic">
-              <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              <img src="images/Jessy.jpg" alt="..." class="img-circle profile_img">
             </div>
             <div class="profile_info">
               <span>Welcome,</span>
@@ -75,11 +75,9 @@
               <ul class="nav side-menu">
                 <li><a><i class="fa fa-home"></i> Entry Data SK <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
-                    <li><a href="pengajaran.html">Entry Data Pengajaran</a>
+                    <li><a href="pembimbingan_tabel.php">Entry Data Pembimbingan</a>
                     </li>
-                    <li><a href="pembimbingan.html">Entry Data Pembimbingan</a>
-                    </li>
-                      <li><a href="publikasi_ilmiah_nasional.html">Entry Data Publikasi Ilmiah Nasional</a>
+                      <li><a href="publikasi_ilmiah_nasional.php">Entry Data Publikasi Ilmiah Nasional</a>
                     </li>
                   </ul>
                 </li>
@@ -96,7 +94,6 @@
                     <li><a href="penulisan_referensi.html">Penulisan Buku Referensi</a>
                     </li>
                     <li><a href="pembicara.html">Pembicara</a>
-                    </li>
                     </li>
                     <li><a href="perolehan_haki.html">Perolehan HAKI</a>
                     </li>
@@ -140,6 +137,8 @@
 
           </div>
           <div class="clearfix"></div>
+            
+            <form action="proses-pembimbingan-tambah.php" method="post" class="form-horizontal form-label-left" novalidate>
 
                   <form class="form-horizontal form-label-left" novalidate>
 
@@ -147,44 +146,74 @@
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Nama Mahasiswa <span class="notblank">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="name" class="form-control col-md-7 col-xs-12" name="name" placeholder="Isi dengan nama panjang" required="required" type="text">
+                        <input id="name" class="form-control col-md-7 col-xs-12" name="form-nama_mhs" placeholder="Isi dengan nama panjang" required="required" type="text">
                       </div>
                     </div>
                     <div class="item form-group">
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Nomor Induk Mahasiswa <span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="nim" class="form-control col-md-7 col-xs-12" name="nim" required="required" type="text">
+                        <input id="name" class="form-control col-md-7 col-xs-12" name="form-nim_mhs" required="required" type="text">
                       </div>
                     </div>
                     <div class="item form-group">
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Judul Skripsi/TA <span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="judul" class="form-control col-md-7 col-xs-12" name="judul" required="required" type="text">
+                        <input id="name" class="form-control col-md-7 col-xs-12" name="form-judul" required="required" type="text">
+<!--
+                           <form action ="">
+                              <input type = "radio" name="gender" value  ="male"> Male<br>
+                          </form>
+-->
                       </div>
                     </div>
+    
                       
                     <div class="item form-group">
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Pembimbing 1 <span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="pembimbing1" class="form-control col-md-7 col-xs-12" name="pembimbing1" required="required" type="text">
-                      </div>
+<!--                        <input id="pembimbing1" class="form-control col-md-7 col-xs-12" name="pembimbing1" required="required" type="text">-->
+                      <select class="form-control col-md-7 col-xs-12" input id="name" name="form-pembimbing1" required="required" type="text">
+                        <option value = "volvo">you are awesome</option>
+                        <option value = "benz">ambil database</option>
+                      </select>
+                          
+                        </div>
                     </div>
                       
                     <div class="item form-group">
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Pembimbing 2 <span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="pembimbing2" class="form-control col-md-7 col-xs-12" name="pembimbing2" required="required" type="text">
-                      </div>
+<!--                        <input id="pembimbing2" class="form-control col-md-7 col-xs-12" name="pembimbing2" required="required" type="text">-->
+                     <select class="form-control col-md-7 col-xs-12" input id="name" name="form-pembimbing2" required="required" type="text">
+                        <option value = "volvo">Volvo</option>
+                          <option value = "benz">Benz</option>
+                      </select>
+                        
+                        </div>
                     </div>
+                      
+                      <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Bukti SK <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+<!--                        <input id="pembimbing2" class="form-control col-md-7 col-xs-12" name="pembimbing2" required="required" type="text">-->
+                     <select class="form-control col-md-7 col-xs-12" input id="bukti_sk" required="required" type="text">
+                        <option value = "volvo">Volvo</option>
+                          <option value = "benz">Benz</option>
+                      </select>
+                        
+                        </div>
+                    </div>
+                      
                     <div class="ln_solid"></div>
                     <div class="form-group">
                       <div class="col-md-6 col-md-offset-3">
                         <button type="submit" class="btn btn-primary">Cancel</button>
-                        <button id="send" type="submit" class="btn btn-success">Submit</button>
+                        <button id="send" type="submit" class="btn btn-success" name="form-submit" value="Submit">Submit</button>
                       </div>
                     </div>
                   </form>
@@ -251,7 +280,7 @@
       return false;
     });
 //VALIDATOR
-    /*  FOR DEMO ONLY  */
+    /* FOR DEMO ONLY */
     $('#vfields').change(function() {
       $('form').toggleClass('mode2');
     }).prop('checked', false);
