@@ -122,21 +122,21 @@
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Nomor HAKI <span class="notblank">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="name" class="form-control col-md-7 col-xs-12" name="name" placeholder="" required="required" type="text">
+                        <input id="nomor" class="form-control col-md-7 col-xs-12" name="name" placeholder="" required="required" type="text">
                       </div>
                     </div>
                     <div class="item form-group">
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Judul HAKI <span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="text" id="email" name="email" required="required" class="form-control col-md-7 col-xs-12">
+                        <input type="text" id="judul" name="email" required="required" class="form-control col-md-7 col-xs-12">
                       </div>
                     </div>
                     <div class="item form-group">
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Jenis HAKI <span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="judulkaryailmiahnasional" class="form-control col-md-7 col-xs-12" name="judul" required="required" type="text">
+                        <input id="jenishaki" class="form-control col-md-7 col-xs-12" name="judul" required="required" type="text">
                       </div>
                     </div>
                       
@@ -144,7 +144,7 @@
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Status Anggota <span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="manuskrip" class="form-control col-md-7 col-xs-12" name="status" required="required" type="text">
+                        <input id="status" class="form-control col-md-7 col-xs-12" name="status" required="required" type="text">
                       </div>
                     </div>
                       <div class="item form-group">
