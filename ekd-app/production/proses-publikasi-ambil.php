@@ -2,7 +2,7 @@
 
 include_once 'connection.php';
 	
-	class PublikasiInternasional {
+	class Publikasi {
 		
 		private $db;
 		private $connection;
@@ -17,16 +17,18 @@ include_once 'connection.php';
 			$this -> connection = $this->db->getConnection();
 		}
         
-        public function getPublikasiInternasional(){
-			$query = "SELECT tahun, judul, sumberdana, jumlah FROM pengmas WHERE peserta = 'bramantyo'";
+        public function getPublikasi(){
+			$query = "SELECT * FROM publikasi";
 			$result = mysqli_query($this->connection, $query);
 			if(mysqli_num_rows($result)>0){
 				while($data = mysqli_fetch_array($result)){
                     echo "<tr>";
-					echo "<td>".$this -> tahun=$data['tahun']."</td>";
+					echo "<td>".$this -> lingkup=$data['lingkup']."</td>";
                     echo "<td>".$this -> judul=$data['judul']."</td>";
-                    echo "<td>".$this -> sumberdana=$data['sumberdana']."</td>";
-                    echo "<td>".$this -> jumlahdana=$data['jumlah']."</td>";
+                    echo "<td>".$this -> atribut=$data['atribut']."</td>";
+                    echo "<td>".$this -> nama=$data['nama']."</td>";
+                    echo "<td>".$this -> kontribusi=$data['kontribusi']."</td>";
+                    echo "<td>".$this -> keterangan=$data['keterangan']."</td>";
                     echo "<td></td>";
                     echo "</tr>";
 				}
@@ -34,6 +36,6 @@ include_once 'connection.php';
 		}
 	}
 			
-$pubinternasional = new PublikasiInternasional();
-$pengabdian->getPengabdian();
+$publikasi = new Publikasi();
+$publikasi->getPublikasi();
 ?>
