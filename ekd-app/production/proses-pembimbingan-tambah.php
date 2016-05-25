@@ -12,9 +12,10 @@ include_once 'connection.php';
 			$this -> connection = $this->db->getConnection();
 		}
 				
-		public function inputPembimbingan($nama_mhs, $nim_mhs, $judul, $pembimbing1, $pembimbing2){
-			$query = "INSERT INTO `pembimbingan` (id_pembimbingan, nama_mhs, nim_mhs, judul, pembimbing1, pembimbing2, jenis, bukti_sk) VALUES ('A002','$nama_mhs','$nim_mhs','$judul','$pembimbing1','$pembimbing2','Skripsi','C:\\EKD\SK_pembimbingan1')";
+		public function inputPembimbingan($nama_mhs, $nim_mhs, $judul, $pembimbing1, $pembimbing2, $buktisk){
+			$query = "INSERT INTO `pembimbingan` (nama_mhs, nim_mhs, judul, pembimbing1, pembimbing2, jenis, bukti_sk) VALUES ('$nama_mhs','$nim_mhs','$judul','$pembimbing1','$pembimbing2','Skripsi','$buktisk')";
 			$inserted = mysqli_query($this->connection, $query);
+            
 			mysqli_close($this->connection);
 		}
 	}
@@ -26,8 +27,9 @@ if($_POST['form-submit'] == "Submit"){
     $judul = $_POST['form-judul'];
     $pembimbing1 = $_POST['form-pembimbing1'];
     $pembimbing2 = $_POST['form-pembimbing2'];
-    $pembimbingan->inputPembimbingan($nama_mhs, $nim_mhs, $judul, $pembimbing1, $pembimbing2);
+    $buktisk = $_POST['bukti-sk'];
+    $pembimbingan->inputPembimbingan($nama_mhs, $nim_mhs, $judul, $pembimbing1, $pembimbing2, $buktisk);
 }
-//include 'content-home.php';
+header("Location: pembimbingan_tabel.php");
 
 ?>
