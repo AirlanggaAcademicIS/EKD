@@ -175,11 +175,39 @@
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
 <!--                        <input id="pembimbing1" class="form-control col-md-7 col-xs-12" name="pembimbing1" required="required" type="text">-->
-                      <select class="form-control col-md-7 col-xs-12" input id="name" name="form-pembimbing1" required="required" type="text">
-                        <option value = "volvo">you are awesome</option>
-                        <option value = "benz">ambil database</option>
-                      </select>
+<!--option DB-->
+                          <select class="form-control col-md-7 col-xs-12" input id="name" required="required" name="form-pembimbing1">
+
+                          <option value ="">
+                          <?php 
+                          include_once 'connection.php';
                           
+                          $db = new DB_Connection();
+			              $connection = $db->getConnection();
+                          
+                          $query="SELECT nama FROM user";
+                          
+                          $result=mysqli_query($connection, $query);
+                              if(mysqli_num_rows($result)>0){
+                                  while($data = mysqli_fetch_array($result)){
+                                      
+                                      echo "<option value=\"".$data['nama']."\"";
+                              if(isset($_POST['form-pembimbing1']))
+                                  if($_POST['form-pembimbing1']==$data['nama']){
+                                      
+                                      echo "selected=\"selected\"";
+                                      
+                                  }
+                          
+                              echo ">".$data['nama']."</option>";
+                                  }
+                                  
+                              }
+                          
+                          ?> 
+                        </option>   
+                      </select>
+<!--option DB-->
                         </div>
                     </div>
                       
@@ -188,9 +216,36 @@
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
 <!--                        <input id="pembimbing2" class="form-control col-md-7 col-xs-12" name="pembimbing2" required="required" type="text">-->
-                     <select class="form-control col-md-7 col-xs-12" input id="name" name="form-pembimbing2" required="required" type="text">
-                        <option value = "volvo">Volvo</option>
-                          <option value = "benz">Benz</option>
+                     <select class="form-control col-md-7 col-xs-12" input id="name" required="required" name="form-pembimbing2">
+
+                          <option value ="">
+                          <?php 
+                          include_once 'connection.php';
+                          
+                          $db = new DB_Connection();
+			              $connection = $db->getConnection();
+                          
+                          $query="SELECT nama FROM user";
+                          
+                          $result=mysqli_query($connection, $query);
+                              if(mysqli_num_rows($result)>0){
+                                  while($data = mysqli_fetch_array($result)){
+                                      
+                                      echo "<option value=\"".$data['nama']."\"";
+                              if(isset($_POST['form-pembimbing2']))
+                                  if($_POST['form-pembimbing2']==$data['nama']){
+                                      
+                                      echo "selected=\"selected\"";
+                                      
+                                  }
+                          
+                              echo ">".$data['nama']."</option>";
+                                  }
+                                  
+                              }
+                          
+                          ?> 
+                        </option>   
                       </select>
                         
                         </div>
@@ -201,10 +256,7 @@
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
 <!--                        <input id="pembimbing2" class="form-control col-md-7 col-xs-12" name="pembimbing2" required="required" type="text">-->
-                     <select class="form-control col-md-7 col-xs-12" input id="bukti_sk" required="required" type="text">
-                        <option value = "volvo">Volvo</option>
-                          <option value = "benz">Benz</option>
-                      </select>
+                        <input id="name" class="form-control col-md-7 col-xs-12" name="bukti-sk" placeholder="masukkan nomor SK" required="required" type="text">
                         
                         </div>
                     </div>
