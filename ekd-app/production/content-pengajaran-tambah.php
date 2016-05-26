@@ -93,7 +93,7 @@
                     </li>
                     <li><a href="penulisan_referensi.html">Penulisan Buku Referensi</a>
                     </li>
-                    <li><a href="pembicara.html">Pembicara</a>
+                    <li><a href="content-pembicara-view.html">Pembicara</a>
                     </li>
                     </li>
                     <li><a href="perolehan_haki.html">Perolehan HAKI</a>
