@@ -56,11 +56,11 @@
           <!-- menu prile quick info -->
           <div class="profile">
             <div class="profile_pic">
-              <img src="images/merida_icon.jpg" alt="..." class="img-circle profile_img">
+              <img src="images/Jessy.jpg" alt="..." class="img-circle profile_img">
             </div>
             <div class="profile_info">
               <span>Welcome,</span>
-              <h2>Rastifani</h2>
+              <h2>Hansel</h2>
             </div>
           </div>
           <!-- /menu prile quick info -->
@@ -75,15 +75,9 @@
               <ul class="nav side-menu">
                 <li><a><i class="fa fa-home"></i> Entry Data SK <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
-                    <li><a href="pengajaran.html">Entry Data Pengajaran</a>
+                    <li><a href="pembimbingan_tabel.php">Entry Data Pembimbingan</a>
                     </li>
-                    <li><a href="pembimbingan.html">Entry Data Pembimbingan</a>
-                    </li>
-                      <li><a href="publikasi_ilmiah_nasional.html">Entry Data Publikasi Ilmiah Nasional</a>
-                    </li>
-                      <li><a href="cetak_EKD.html">Cetak EKD</a>
-                    </li>
-                       <li><a href="buku_ajar.html">Pengalaman Penulisan Buku Ajar</a>
+                      <li><a href="publikasi_ilmiah_nasional.php">Entry Data Publikasi Ilmiah Nasional</a>
                     </li>
                   </ul>
                 </li>
@@ -100,7 +94,6 @@
                     <li><a href="penulisan_referensi.html">Penulisan Buku Referensi</a>
                     </li>
                     <li><a href="pembicara.html">Pembicara</a>
-                    </li>
                     </li>
                     <li><a href="perolehan_haki.html">Perolehan HAKI</a>
                     </li>
@@ -138,91 +131,141 @@
           <div class="page-title">
             <div class="title_left">
               <h3>
-                    Cetak EKD
+                    Form Pembimbingan
                 </h3>
             </div>
 
           </div>
           <div class="clearfix"></div>
+            
+            <form action="proses-pembimbingan-tambah.php" method="post" class="form-horizontal form-label-left" novalidate>
 
                   <form class="form-horizontal form-label-left" novalidate>
 
                     <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Identitas Diri <span class="notblank">*</span>
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Nama Mahasiswa <span class="notblank">*</span>
                       </label>
-                     
-                    </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Pendidikan dan Pengajaran <span class="required">*</span>
-                      </label>
-                     
-                    </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Pembimbingan <span class="required">*</span>
-                      </label>
-                      
-                    </div>
-                      
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Penelitian <span class="required">*</span>
-                      </label>
-                      
-                    </div>
-                      
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Pengabdian Masyarakat <span class="required">*</span>
-                      </label>
-                    
-                    </div>
-                      
-                      <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Publikasi Ilmiah di Jurnal Nasional <span class="required">*</span>
-                      </label>
-                      
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="name" class="form-control col-md-7 col-xs-12" name="form-nama_mhs" placeholder="Isi dengan nama panjang" required="required" type="text">
                       </div>
-                      
-                          <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Publikasi Ilmiah di Jurnal Internasional <span class="required">*</span>
-                      </label>
-                      
                     </div>
-                      
-                      <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Pengalaman Penulisan Buku Ajar <span class="required">*</span>
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Nomor Induk Mahasiswa <span class="required">*</span>
                       </label>
-                      
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="name" class="form-control col-md-7 col-xs-12" name="form-nim_mhs" required="required" type="text">
+                      </div>
                     </div>
-                      
-                      <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Pengalaman Penulisan Buku Refrensi <span class="required">*</span>
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Judul Skripsi/TA <span class="required">*</span>
                       </label>
-                     
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="name" class="form-control col-md-7 col-xs-12" name="form-judul" required="required" type="text">
+<!--
+                           <form action ="">
+                              <input type = "radio" name="gender" value  ="male"> Male<br>
+                          </form>
+-->
+                      </div>
                     </div>
+    
                       
-                      <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Pengalaman Oral Seminar Ilmiah <span class="required">*</span>
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Pembimbing 1 <span class="required">*</span>
                       </label>
-                     
-                    </div>
-                      
-                      <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Pengalaman Perolehan HAKI 1 Tahun <span class="required">*</span>
-                      </label>
-                      
-                    </div>
-                      
-                      <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Tugas Belajar <span class="required">*</span>
-                      </label>
-                      
-                    </div>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+<!--                        <input id="pembimbing1" class="form-control col-md-7 col-xs-12" name="pembimbing1" required="required" type="text">-->
+<!--option DB-->
+                          <select class="form-control col-md-7 col-xs-12" input id="name" required="required" name="form-pembimbing1">
+
+                          <option value ="">
+                          <?php 
+                          include_once 'connection.php';
                           
+                          $db = new DB_Connection();
+			              $connection = $db->getConnection();
+                          
+                          $query="SELECT nama FROM user";
+                          
+                          $result=mysqli_query($connection, $query);
+                              if(mysqli_num_rows($result)>0){
+                                  while($data = mysqli_fetch_array($result)){
+                                      
+                                      echo "<option value=\"".$data['nama']."\"";
+                              if(isset($_POST['form-pembimbing1']))
+                                  if($_POST['form-pembimbing1']==$data['nama']){
+                                      
+                                      echo "selected=\"selected\"";
+                                      
+                                  }
+                          
+                              echo ">".$data['nama']."</option>";
+                                  }
+                                  
+                              }
+                          
+                          ?> 
+                        </option>   
+                      </select>
+<!--option DB-->
+                        </div>
                     </div>
+                      
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Pembimbing 2 <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+<!--                        <input id="pembimbing2" class="form-control col-md-7 col-xs-12" name="pembimbing2" required="required" type="text">-->
+                     <select class="form-control col-md-7 col-xs-12" input id="name" required="required" name="form-pembimbing2">
+
+                          <option value ="">
+                          <?php 
+                          include_once 'connection.php';
+                          
+                          $db = new DB_Connection();
+			              $connection = $db->getConnection();
+                          
+                          $query="SELECT nama FROM user";
+                          
+                          $result=mysqli_query($connection, $query);
+                              if(mysqli_num_rows($result)>0){
+                                  while($data = mysqli_fetch_array($result)){
+                                      
+                                      echo "<option value=\"".$data['nama']."\"";
+                              if(isset($_POST['form-pembimbing2']))
+                                  if($_POST['form-pembimbing2']==$data['nama']){
+                                      
+                                      echo "selected=\"selected\"";
+                                      
+                                  }
+                          
+                              echo ">".$data['nama']."</option>";
+                                  }
+                                  
+                              }
+                          
+                          ?> 
+                        </option>   
+                      </select>
+                        
+                        </div>
+                    </div>
+                      
+                      <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Bukti SK <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+<!--                        <input id="pembimbing2" class="form-control col-md-7 col-xs-12" name="pembimbing2" required="required" type="text">-->
+                        <input id="name" class="form-control col-md-7 col-xs-12" name="bukti-sk" placeholder="masukkan nomor SK" required="required" type="text">
+                        
+                        </div>
+                    </div>
+                      
                     <div class="ln_solid"></div>
                     <div class="form-group">
                       <div class="col-md-6 col-md-offset-3">
                         <button type="submit" class="btn btn-primary">Cancel</button>
-                        <button id="send" type="submit" class="btn btn-success">Submit</button>
+                        <button id="send" type="submit" class="btn btn-success" name="form-submit" value="Submit">Submit</button>
                       </div>
                     </div>
                   </form>

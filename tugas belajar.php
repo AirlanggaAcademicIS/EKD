@@ -24,16 +24,6 @@
 
   <script src="js/jquery.min.js"></script>
 
-  <!--[if lt IE 9]>
-        <script src="../assets/js/ie8-responsive-file-warning.js"></script>
-        <![endif]-->
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
 </head>
 
 
@@ -60,7 +50,7 @@
             </div>
             <div class="profile_info">
               <span>Welcome,</span>
-              <h2>Rastifani</h2>
+              <h2>Bahana Sukma Dewa</h2>
             </div>
           </div>
           <!-- /menu prile quick info -->
@@ -77,16 +67,18 @@
                   <ul class="nav child_menu" style="display: none">
                     <li><a href="pengajaran.html">Entry Data Pengajaran</a>
                     </li>
+                      <li><a href="tugas_belajar.html">Tugas Belajar</a>
+                    </li>
                     <li><a href="pembimbingan.html">Entry Data Pembimbingan</a>
                     </li>
                       <li><a href="publikasi_ilmiah_nasional.html">Entry Data Publikasi Ilmiah Nasional</a>
                     </li>
                       <li><a href="cetak_EKD.html">Cetak EKD</a>
                     </li>
-                       <li><a href="buku_ajar.html">Pengalaman Penulisan Buku Ajar</a>
-                    </li>
                   </ul>
                 </li>
+                  
+                  
                 <li><a><i class="fa fa-edit"></i> Entry Data Pribadi <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
                     <li><a href="penelitian.html">Penelitian</a>
@@ -104,8 +96,7 @@
                     </li>
                     <li><a href="perolehan_haki.html">Perolehan HAKI</a>
                     </li>
-                  <li><a href="tugas_belajar.html">Tugas Belajar</a>
-                    </li>
+                  
                   </ul>
                 </li>
               </ul>
@@ -138,7 +129,7 @@
           <div class="page-title">
             <div class="title_left">
               <h3>
-                    Cetak EKD
+                    Form Tugas Belajar
                 </h3>
             </div>
 
@@ -148,76 +139,39 @@
                   <form class="form-horizontal form-label-left" novalidate>
 
                     <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Identitas Diri <span class="notblank">*</span>
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Nama Perguruan  Tinggi <span class="notblank">*</span>
                       </label>
-                     
-                    </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Pendidikan dan Pengajaran <span class="required">*</span>
-                      </label>
-                     
-                    </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Pembimbingan <span class="required">*</span>
-                      </label>
-                      
-                    </div>
-                      
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Penelitian <span class="required">*</span>
-                      </label>
-                      
-                    </div>
-                      
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Pengabdian Masyarakat <span class="required">*</span>
-                      </label>
-                    
-                    </div>
-                      
-                      <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Publikasi Ilmiah di Jurnal Nasional <span class="required">*</span>
-                      </label>
-                      
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="name" class="form-control col-md-7 col-xs-12" name="name" required="required" type="text">
                       </div>
+                    </div>
                       
-                          <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Publikasi Ilmiah di Jurnal Internasional <span class="required">*</span>
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Bidang Ilmu <span class="required">*</span>
                       </label>
-                      
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="nim" class="form-control col-md-7 col-xs-12" name="nim" required="required" type="text">
+                      </div>
                     </div>
                       
-                      <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Pengalaman Penulisan Buku Ajar <span class="required">*</span>
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Semester berjalan <span class="required">*</span>
                       </label>
-                      
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="semesterBerjalan" class="form-control col-md-7 col-xs-12" name="semesterBerjalan" required="required" type="text">
+                      </div>
                     </div>
                       
-                      <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Pengalaman Penulisan Buku Refrensi <span class="required">*</span>
+                       <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name"> Bukti pengajaran <span class="required">*</span>
                       </label>
-                     
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type = "file" name="datafile" size="50"  > <label> <font size ="1">  maximal 500KB  </label>
+                      </div>
                     </div>
                       
-                      <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Pengalaman Oral Seminar Ilmiah <span class="required">*</span>
-                      </label>
-                     
-                    </div>
                       
-                      <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Pengalaman Perolehan HAKI 1 Tahun <span class="required">*</span>
-                      </label>
                       
-                    </div>
-                      
-                      <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Tugas Belajar <span class="required">*</span>
-                      </label>
-                      
-                    </div>
-                          
-                    </div>
                     <div class="ln_solid"></div>
                     <div class="form-group">
                       <div class="col-md-6 col-md-offset-3">
@@ -229,13 +183,8 @@
         </div>
 
         <!-- footer content -->
-        <footer>
-          <div class="clearfix"></div>
-        </footer>
-        <!-- /footer content -->
-
-      </div>
-      <!-- /page content -->
+        
+        
     </div>
 
   </div>

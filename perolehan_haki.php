@@ -56,11 +56,11 @@
           <!-- menu prile quick info -->
           <div class="profile">
             <div class="profile_pic">
-              <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              <img src="images/merida_icon.jpg" alt="..." class="img-circle profile_img">
             </div>
             <div class="profile_info">
               <span>Welcome,</span>
-              <h2>Bramantyo</h2>
+              <h2>Ivan</h2>
             </div>
           </div>
           <!-- /menu prile quick info -->
@@ -73,16 +73,11 @@
             <div class="menu_section">
               <h3>General</h3>
               <ul class="nav side-menu">
-                <li><a><i class="fa fa-edit"></i>Pengabdian Masyarakat <span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="content-pengabdian-tambah.html">Tambah Data Pengabdian Masyarakat</a></li>
-                    <li><a href="content-pengabdian-view.html">Lihat Data Pengabdian Masyarakat</a></li>
+                <li><a><i class="fa fa-home"></i> Entry HAKI <span class="fa fa-chevron-down"></span></a>
+                  
                   </ul>
                 </li>
-                <li><a><i class="fa fa-edit"></i>Publikasi Ilmiah Internasional <span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="content-publikasiinternas-tambah.html">Tambah Data Publikasi Ilmiah Internasional</a></li>
-                    <li><a href="content-publikasiinternas-view.html">Lihat Data Publikasi Ilmiah Internasional</a></li>
+                
                   </ul>
                 </li>
               </ul>
@@ -115,57 +110,59 @@
           <div class="page-title">
             <div class="title_left">
               <h3>
-                    Form Pengabdian Masyarakat
-              </h3>
+                    Form Perolehan HAKI
+                </h3>
             </div>
 
           </div>
           <div class="clearfix"></div>
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="x_panel">
-                <div class="x_title">
-                  <h2>Default Example <small>Users</small></h2>
-                  <ul class="nav navbar-right panel_toolbox">
-                    <li><a href="#"><i class="fa fa-chevron-up"></i></a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Settings 1</a>
-                        </li>
-                        <li><a href="#">Settings 2</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li><a href="#"><i class="fa fa-close"></i></a>
-                    </li>
-                  </ul>
-                  <div class="clearfix"></div>
-                </div>
-                <div class="x_content">
-                  <table id="datatable" class="table table-striped table-bordered">
-                    <thead>
-                      <tr>
-                        <th>Tahun</th>
-                        <th>Judul</th>
-                        <th>Sumber Dana</th>
-                        <th>Jumlah (Rp.)</th>
-                      </tr>
-                    </thead>
 
-
-                    <tbody>
-                      <tr>
-                        <td>2016</td>
-                        <td>Pengabdian Nasional</td>
-                        <td>Universitas Airlangga</td>
-                        <td>25000000</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
+                  <form class="form-horizontal form-label-left" novalidate>
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Nomor HAKI <span class="notblank">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="nomor" class="form-control col-md-7 col-xs-12" name="name" placeholder="" required="required" type="text">
+                      </div>
+                    </div>
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Judul HAKI <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="text" id="judul" name="email" required="required" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Jenis HAKI <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="jenishaki" class="form-control col-md-7 col-xs-12" name="judul" required="required" type="text">
+                      </div>
+                    </div>
+                      
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Status Anggota <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="status" class="form-control col-md-7 col-xs-12" name="status" required="required" type="text">
+                      </div>
+                    </div>
+                      <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Upload HAKI <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="file" name="datafile" size="40">
+                      </div>
+                    </div>
+                     
+                    <div class="ln_solid"></div>
+                    <div class="form-group">
+                      <div class="col-md-6 col-md-offset-3">
+                        <button type="submit" class="btn btn-primary">Cancel</button>
+                        <button id="send" type="submit" class="btn btn-success">Submit</button>
+                      </div>
+                    </div>
+                  </form>
         </div>
 
         <!-- footer content -->

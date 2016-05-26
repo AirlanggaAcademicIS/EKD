@@ -73,16 +73,33 @@
             <div class="menu_section">
               <h3>General</h3>
               <ul class="nav side-menu">
-                <li><a><i class="fa fa-edit"></i>Pengabdian Masyarakat <span class="fa fa-chevron-down"></span></a>
+                <li><a><i class="fa fa-home"></i> Entry Data SK <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
-                    <li><a href="content-pengabdian-tambah.html">Tambah Data Pengabdian Masyarakat</a></li>
-                    <li><a href="content-pengabdian-view.html">Lihat Data Pengabdian Masyarakat</a></li>
+                    <li><a href="content-pengajaran-view.html">Entry Data Pengajaran</a>
+                    </li>
+                    <li><a href="pembimbingan.html">Entry Data Pembimbingan</a>
+                    </li>
                   </ul>
                 </li>
-                <li><a><i class="fa fa-edit"></i>Publikasi Ilmiah Internasional <span class="fa fa-chevron-down"></span></a>
+                <li><a><i class="fa fa-edit"></i> Entry Data Pribadi <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
-                    <li><a href="content-publikasiinternas-tambah.html">Tambah Data Publikasi Ilmiah Internasional</a></li>
-                    <li><a href="content-publikasiinternas-view.html">Lihat Data Publikasi Ilmiah Internasional</a></li>
+                    <li><a href="penelitian.html">Penelitian</a>
+                    </li>
+                    <li><a href="pengabdian.html">PEngabdian Masyarakat</a>
+                    </li>
+                    <li><a href="publikasi.html">Publikasi Ilmiah</a>
+                    </li>
+                    <li><a href="penulisan_ajar.html">Penulisan Buku Ajar</a>
+                    </li>
+                    <li><a href="penulisan_referensi.html">Penulisan Buku Referensi</a>
+                    </li>
+                    <li><a href="pembicara.html">Pembicara</a>
+                    </li>
+                    </li>
+                    <li><a href="perolehan_haki.html">Perolehan HAKI</a>
+                    </li>
+                  <li><a href="tugas_belajar.html">Tugas Belajar</a>
+                    </li>
                   </ul>
                 </li>
               </ul>
@@ -115,59 +132,60 @@
           <div class="page-title">
             <div class="title_left">
               <h3>
-                    Form Pengabdian Masyarakat
-              </h3>
+                    Form Pengajaran
+                </h3>
             </div>
 
           </div>
           <div class="clearfix"></div>
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="x_panel">
-                <div class="x_title">
-                  <h2>Default Example <small>Users</small></h2>
-                  <ul class="nav navbar-right panel_toolbox">
-                    <li><a href="#"><i class="fa fa-chevron-up"></i></a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Settings 1</a>
-                        </li>
-                        <li><a href="#">Settings 2</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li><a href="#"><i class="fa fa-close"></i></a>
-                    </li>
-                  </ul>
-                  <div class="clearfix"></div>
-                </div>
-                <div class="x_content">
-                  <table id="datatable" class="table table-striped table-bordered">
-                    <thead>
-                      <tr>
-                        <th>Judul</th>
-                        <th>Vol./No./Hal./Tahun</th>
-                        <th>Nama Jurnal</th>
-                        <th>Kontribusi</th>
-                        <th>Keterangan</th>
-                      </tr>
-                    </thead>
 
+                  <form class="form-horizontal form-label-left" novalidate>
 
-                    <tbody>
-                      <tr>
-                        <td> </td>
-                        <td> </td>
-                        <td> </td>
-                        <td>Ketua</td>
-                        <td>Terakreditasi DIKTI</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Pembina <span class="notblank">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="name" class="form-control col-md-7 col-xs-12" name="name" placeholder="Isi dengan nama panjang" required="required" type="text">
+                      </div>
+                    </div>
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Kode MK <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="email" id="email" name="email" required="required" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">SKS <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="number" id="number" name="number" required="required" data-validate-minmax="10,100" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+                      
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">Jumlah Kelas <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="number" id="number" name="number" required="required" data-validate-minmax="10,100" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+                      
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">Beban <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="number" id="number" name="number" placeholder="dalam satuan persen" required="required" data-validate-minmax="10,100" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+                    <div class="ln_solid"></div>
+                    <div class="form-group">
+                      <div class="col-md-6 col-md-offset-3">
+                        <button type="submit" class="btn btn-primary">Cancel</button>
+                        <button id="send" type="submit" class="btn btn-success">Submit</button>
+                      </div>
+                    </div>
+                  </form>
         </div>
 
         <!-- footer content -->

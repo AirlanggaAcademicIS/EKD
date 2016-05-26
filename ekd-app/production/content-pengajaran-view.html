@@ -73,16 +73,33 @@
             <div class="menu_section">
               <h3>General</h3>
               <ul class="nav side-menu">
-                <li><a><i class="fa fa-edit"></i>Pengabdian Masyarakat <span class="fa fa-chevron-down"></span></a>
+                <li><a><i class="fa fa-home"></i> Entry Data SK <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
-                    <li><a href="content-pengabdian-tambah.html">Tambah Data Pengabdian Masyarakat</a></li>
-                    <li><a href="content-pengabdian-view.html">Lihat Data Pengabdian Masyarakat</a></li>
+                    <li><a href="content-pengajaran-view.html">Entry Data Pengajaran</a>
+                    </li>
+                    <li><a href="pembimbingan.html">Entry Data Pembimbingan</a>
+                    </li>
                   </ul>
                 </li>
-                <li><a><i class="fa fa-edit"></i>Publikasi Ilmiah Internasional <span class="fa fa-chevron-down"></span></a>
+                <li><a><i class="fa fa-edit"></i> Entry Data Pribadi <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
-                    <li><a href="content-publikasiinternas-tambah.html">Tambah Data Publikasi Ilmiah Internasional</a></li>
-                    <li><a href="content-publikasiinternas-view.html">Lihat Data Publikasi Ilmiah Internasional</a></li>
+                    <li><a href="penelitian.html">Penelitian</a>
+                    </li>
+                    <li><a href="pengabdian.html">PEngabdian Masyarakat</a>
+                    </li>
+                    <li><a href="publikasi.html">Publikasi Ilmiah</a>
+                    </li>
+                    <li><a href="penulisan_ajar.html">Penulisan Buku Ajar</a>
+                    </li>
+                    <li><a href="penulisan_referensi.html">Penulisan Buku Referensi</a>
+                    </li>
+                    <li><a href="pembicara.html">Pembicara</a>
+                    </li>
+                    </li>
+                    <li><a href="perolehan_haki.html">Perolehan HAKI</a>
+                    </li>
+                  <li><a href="tugas_belajar.html">Tugas Belajar</a>
+                    </li>
                   </ul>
                 </li>
               </ul>
@@ -111,72 +128,49 @@
       <!-- page content -->
       <div class="right_col" role="main">
 
-        <div class="">
-          <div class="page-title">
-            <div class="title_left">
-              <h3>
-                    Form Pengabdian Masyarakat
-              </h3>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              
+                <div class="x_title">
+                  <h3>Pendidikan dan Pengajaran</h3>
+                  <div class="clearfix"><div class="col-md-6">
+                        <h2>Tahun Akademik</h2>
+                      <div class="col-md-6">
+                    <div class="btn-group">
+                        <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"> Dropdown <span class="caret"></span> </button>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Dropdown link 1</a>
+                          </li>
+                          <li><a href="#">Dropdown link 2</a>
+                          </li>
+                          <li><a href="#">Dropdown link 3</a>
+                          </li>
+                        </ul>
+                      </div>
+                      </div></div></div>
+                </div>
+                <div class="x_content">
+                  <table id="datatable-buttons" class="table table-striped table-bordered">
+                    <thead>
+                      <tr>
+                        <th>No</th>
+                        <th>Kegiatan</th>
+                        <th>SKS</th>
+                        <th>Jumlah Pengampu</th>
+                        <th>Beban(%)</th>
+                        <th>Bukti SK</th>
+                      </tr>
+                    </thead>
+
+                      <tbody>
+                          
+                      </tbody>
+                  </table>
+                </div>
+              
+                
+                  <li><a href = "content-pengajaran-tambah.php"><button type="button" class="btn btn-default">Default</button></li>
+                
             </div>
-
-          </div>
-          <div class="clearfix"></div>
-
-                  <form class="form-horizontal form-label-left" novalidate>
-
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Judul <span class="notblank">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="name" class="form-control col-md-7 col-xs-12" name="form-judul"  required="required" type="text">
-                      </div>
-                    </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Vol./No./Hal./Tahun <span class="required">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="text" id="email" name="form-kelengkapan" required="required" class="form-control col-md-7 col-xs-12">
-                      </div>
-                    </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">Nama Jurnal <span class="required">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="text" id="number" name="form-namajurnal" required="required" data-validate-minmax="10,100" class="form-control col-md-7 col-xs-12">
-                      </div>
-                    </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">Kontribusi <span class="required">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                      <select id="form-kontib" class="form-control" required>
-                          <option value="">Pilih. . . </option>
-                          <option value="press">Ketua</option>
-                          <option value="net">Anggota</option>
-                        </select>
-                        </div>
-                    </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">Keterangan <span class="required">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                      <select id="form-kontib" class="form-control" required>
-                          <option value="">Pilih. . . </option>
-                          <option value="press">Terakreditasi DIKTI</option>
-                          <option value="net">Tidak</option>
-                        </select>
-                        </div>
-                    </div>
-                    <div class="ln_solid"></div>
-                    <div class="form-group">
-                      <div class="col-md-6 col-md-offset-3">
-                        <button type="submit" class="btn btn-primary">Cancel</button>
-                        <button id="send" type="submit" class="btn btn-success">Submit</button>
-                      </div>
-                    </div>
-                  </form>
-        </div>
-
         <!-- footer content -->
         <footer>
           <div class="clearfix"></div>
@@ -207,6 +201,11 @@
   <script src="js/custom.js"></script>
   <!-- form validation -->
   <script src="js/validator/validator.js"></script>
+
+        <script src="js/datatables/jquery.dataTables.min.js"></script>
+        <script src="js/datatables/dataTables.bootstrap.js"></script>
+        <script src="js/datatables/dataTables.buttons.min.js"></script>
+        <script src="js/datatables/buttons.bootstrap.min.js"></script>
   <script>
     // initialize the validator function
     validator.message['date'] = 'not a real date';
@@ -249,6 +248,62 @@
         $('form .alert').remove();
     }).prop('checked', false);
   </script>
+
+
+        <script src="js/pace/pace.min.js"></script>
+        <script>
+          var handleDataTableButtons = function() {
+              "use strict";
+              0 !== $("#datatable-buttons").length && $("#datatable-buttons").DataTable({
+                dom: "Bfrtip",
+                buttons: [{
+                  extend: "copy",
+                  className: "btn-sm"
+                }, {
+                  extend: "csv",
+                  className: "btn-sm"
+                }, {
+                  extend: "excel",
+                  className: "btn-sm"
+                }, {
+                  extend: "pdf",
+                  className: "btn-sm"
+                }, {
+                  extend: "print",
+                  className: "btn-sm"
+                }],
+                responsive: !0
+              })
+            },
+            TableManageButtons = function() {
+              "use strict";
+              return {
+                init: function() {
+                  handleDataTableButtons()
+                }
+              }
+            }();
+        </script>
+        <script type="text/javascript">
+          $(document).ready(function() {
+            $('#datatable').dataTable();
+            $('#datatable-keytable').DataTable({
+              keys: true
+            });
+            $('#datatable-responsive').DataTable();
+            $('#datatable-scroller').DataTable({
+              ajax: "js/datatables/json/scroller-demo.json",
+              deferRender: true,
+              scrollY: 380,
+              scrollCollapse: true,
+              scroller: true
+            });
+            var table = $('#datatable-fixed-header').DataTable({
+              fixedHeader: true
+            });
+          });
+          TableManageButtons.init();
+        </script>
 
 </body>
 
