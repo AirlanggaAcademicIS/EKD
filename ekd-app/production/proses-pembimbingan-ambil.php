@@ -31,7 +31,6 @@ include_once 'connection.php';
                     echo "<td>".$this -> pembimbing1=$data['pembimbing1']."</td>";
                     echo "<td>".$this -> pembimbing2=$data['pembimbing2']."</td>";
                     echo "<td>".$this -> bukti_sk=$data['bukti_sk']."</td>";
-                    echo "<td></td>";
                     echo "</tr>";
                     
 				}
