@@ -24,16 +24,6 @@
 
   <script src="js/jquery.min.js"></script>
 
-  <!--[if lt IE 9]>
-        <script src="../assets/js/ie8-responsive-file-warning.js"></script>
-        <![endif]-->
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
 </head>
 
 
@@ -56,11 +46,11 @@
           <!-- menu prile quick info -->
           <div class="profile">
             <div class="profile_pic">
-              <img src="images/Jessy.jpg" alt="..." class="img-circle profile_img">
+              <img src="images/merida_icon.jpg" alt="..." class="img-circle profile_img">
             </div>
             <div class="profile_info">
               <span>Welcome,</span>
-              <h2>Hansel</h2>
+              <h2>Bahana Sukma Dewa</h2>
             </div>
           </div>
           <!-- /menu prile quick info -->
@@ -75,12 +65,20 @@
               <ul class="nav side-menu">
                 <li><a><i class="fa fa-home"></i> Entry Data SK <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
-                    <li><a href="pembimbingan_tabel.php">Entry Data Pembimbingan</a>
+                    <li><a href="pengajaran.html">Entry Data Pengajaran</a>
                     </li>
-                      <li><a href="publikasi_ilmiah_nasional.php">Entry Data Publikasi Ilmiah Nasional</a>
+                      <li><a href="tugas_belajar.html">Tugas Belajar</a>
+                    </li>
+                    <li><a href="pembimbingan.html">Entry Data Pembimbingan</a>
+                    </li>
+                      <li><a href="publikasi_ilmiah_nasional.html">Entry Data Publikasi Ilmiah Nasional</a>
+                    </li>
+                      <li><a href="cetak_EKD.html">Cetak EKD</a>
                     </li>
                   </ul>
                 </li>
+                  
+                  
                 <li><a><i class="fa fa-edit"></i> Entry Data Pribadi <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
                     <li><a href="penelitian.html">Penelitian</a>
@@ -95,10 +93,10 @@
                     </li>
                     <li><a href="pembicara.html">Pembicara</a>
                     </li>
+                    </li>
                     <li><a href="perolehan_haki.html">Perolehan HAKI</a>
                     </li>
-                  <li><a href="tugas_belajar.html">Tugas Belajar</a>
-                    </li>
+                  
                   </ul>
                 </li>
               </ul>
@@ -131,154 +129,62 @@
           <div class="page-title">
             <div class="title_left">
               <h3>
-                    Form Pembimbingan
+                    Form Tugas Belajar
                 </h3>
             </div>
 
           </div>
           <div class="clearfix"></div>
-            
-            <form action="proses-pembimbingan-tambah.php" method="post" class="form-horizontal form-label-left" novalidate>
 
                   <form class="form-horizontal form-label-left" novalidate>
 
                     <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Nama Mahasiswa <span class="notblank">*</span>
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Nama Perguruan  Tinggi <span class="notblank">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="name" class="form-control col-md-7 col-xs-12" name="form-nama_mhs" placeholder="Isi dengan nama panjang" required="required" type="text">
+                        <input id="name" class="form-control col-md-7 col-xs-12" name="name" required="required" type="text">
                       </div>
-                    </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Nomor Induk Mahasiswa <span class="required">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="name" class="form-control col-md-7 col-xs-12" name="form-nim_mhs" required="required" type="text">
-                      </div>
-                    </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Judul Skripsi/TA <span class="required">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="name" class="form-control col-md-7 col-xs-12" name="form-judul" required="required" type="text">
-<!--
-                           <form action ="">
-                              <input type = "radio" name="gender" value  ="male"> Male<br>
-                          </form>
--->
-                      </div>
-                    </div>
-    
-                      
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Pembimbing 1 <span class="required">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-<!--                        <input id="pembimbing1" class="form-control col-md-7 col-xs-12" name="pembimbing1" required="required" type="text">-->
-<!--option DB-->
-                          <select class="form-control col-md-7 col-xs-12" input id="name" required="required" name="form-pembimbing1">
-
-                          <option value ="">
-                          <?php 
-                          include_once 'connection.php';
-                          
-                          $db = new DB_Connection();
-			              $connection = $db->getConnection();
-                          
-                          $query="SELECT nama FROM user";
-                          
-                          $result=mysqli_query($connection, $query);
-                              if(mysqli_num_rows($result)>0){
-                                  while($data = mysqli_fetch_array($result)){
-                                      
-                                      echo "<option value=\"".$data['nama']."\"";
-                              if(isset($_POST['form-pembimbing1']))
-                                  if($_POST['form-pembimbing1']==$data['nama']){
-                                      
-                                      echo "selected=\"selected\"";
-                                      
-                                  }
-                          
-                              echo ">".$data['nama']."</option>";
-                                  }
-                                  
-                              }
-                          
-                          ?> 
-                        </option>   
-                      </select>
-<!--option DB-->
-                        </div>
                     </div>
                       
                     <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Pembimbing 2 <span class="required">*</span>
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Bidang Ilmu <span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-<!--                        <input id="pembimbing2" class="form-control col-md-7 col-xs-12" name="pembimbing2" required="required" type="text">-->
-                     <select class="form-control col-md-7 col-xs-12" input id="name" required="required" name="form-pembimbing2">
-
-                          <option value ="">
-                          <?php 
-                          include_once 'connection.php';
-                          
-                          $db = new DB_Connection();
-			              $connection = $db->getConnection();
-                          
-                          $query="SELECT nama FROM user";
-                          
-                          $result=mysqli_query($connection, $query);
-                              if(mysqli_num_rows($result)>0){
-                                  while($data = mysqli_fetch_array($result)){
-                                      
-                                      echo "<option value=\"".$data['nama']."\"";
-                              if(isset($_POST['form-pembimbing2']))
-                                  if($_POST['form-pembimbing2']==$data['nama']){
-                                      
-                                      echo "selected=\"selected\"";
-                                      
-                                  }
-                          
-                              echo ">".$data['nama']."</option>";
-                                  }
-                                  
-                              }
-                          
-                          ?> 
-                        </option>   
-                      </select>
-                        
-                        </div>
+                        <input id="nim" class="form-control col-md-7 col-xs-12" name="nim" required="required" type="text">
+                      </div>
                     </div>
                       
-                      <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Bukti SK <span class="required">*</span>
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Semester berjalan <span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-<!--                        <input id="pembimbing2" class="form-control col-md-7 col-xs-12" name="pembimbing2" required="required" type="text">-->
-                        <input id="name" class="form-control col-md-7 col-xs-12" name="bukti-sk" placeholder="masukkan nomor SK" required="required" type="text">
-                        
-                        </div>
+                        <input id="semesterBerjalan" class="form-control col-md-7 col-xs-12" name="semesterBerjalan" required="required" type="text">
+                      </div>
                     </div>
+                      
+                       <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name"> Bukti pengajaran <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type = "file" name="datafile" size="50"  > <label> <font size ="1">  maximal 500KB  </label>
+                      </div>
+                    </div>
+                      
+                      
                       
                     <div class="ln_solid"></div>
                     <div class="form-group">
                       <div class="col-md-6 col-md-offset-3">
                         <button type="submit" class="btn btn-primary">Cancel</button>
-                        <button id="send" type="submit" class="btn btn-success" name="form-submit" value="Submit">Submit</button>
+                        <button id="send" type="submit" class="btn btn-success">Submit</button>
                       </div>
                     </div>
                   </form>
         </div>
 
         <!-- footer content -->
-        <footer>
-          <div class="clearfix"></div>
-        </footer>
-        <!-- /footer content -->
-
-      </div>
-      <!-- /page content -->
+        
+        
     </div>
 
   </div>

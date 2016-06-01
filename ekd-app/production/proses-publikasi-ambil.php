@@ -4,13 +4,13 @@
 include_once 'connection.php';
 	
 	// inisialisasi nama class
-	class Pengabdian {
+	class Publikasi {
 		
 		// variabel untuk database
 		private $db;
 		private $connection;
 		
-		// variabel yang dibutuhkan untuk tabel pengabdian masyarakat (dari database)
+		// variabel yang dibutuhkan untuk tabel publikasi (dari database)
         private $tahun;
         private $judul;
         private $sumberdana;
@@ -23,10 +23,10 @@ include_once 'connection.php';
 		}
         
 		// method ambil dari database
-        public function getPengabdian(){
+        public function getPublikasi(){
 			// variabel query untuk menampung query yang ditentukan untuk operasi ambil, 
 			// disesuaikan sama apa aja yang mau diambil 
-			$query = "SELECT tahun, judul, sumberdana, jumlah FROM pengmas WHERE peserta = 'bramantyo'";
+			$query = "SELECT * FROM publikasi";
 			
 			// variabel yang menampung hasil query
 			// mysqli_query == fungsi dari php untuk menjalankan query
@@ -37,23 +37,25 @@ include_once 'connection.php';
 				// fungsi untuk mengambil data,
 				// karena lebih dari 1 => pake while
 				while($data = mysqli_fetch_array($result)){
-					// <tr> <td> untuk ditampilkan dalam tabel
+                    // <tr> <td> untuk ditampilkan dalam tabel
                     echo "<tr>";
 					// $this -> tahun => untuk mengisi variabel tahun yang diinisialisasi diawal
-					// $data['tahun'] => 'tahun' didapat dari nama kolom di database
-					echo "<td>".$this -> tahun=$data['tahun']."</td>";
+					// $data['lingkup'] => 'lingkup' didapat dari nama kolom di database
+					echo "<td>".$this -> lingkup=$data['lingkup']."</td>";
                     echo "<td>".$this -> judul=$data['judul']."</td>";
-                    echo "<td>".$this -> sumberdana=$data['sumberdana']."</td>";
-                    echo "<td>".$this -> jumlahdana=$data['jumlah']."</td>";
+                    echo "<td>".$this -> atribut=$data['atribut']."</td>";
+                    echo "<td>".$this -> nama=$data['nama']."</td>";
+                    echo "<td>".$this -> kontribusi=$data['kontribusi']."</td>";
+                    echo "<td>".$this -> keterangan=$data['keterangan']."</td>";
                     echo "<td></td>";
                     echo "</tr>";
 				}
 			}
 		}
 	}
-	
+			
 //	menginisialisasi class		
-$pengabdian = new Pengabdian();
+$publikasi = new Publikasi();
 // menjalankan method ambil pengabdian
-$pengabdian->getPengabdian();
+$publikasi->getPublikasi();
 ?>

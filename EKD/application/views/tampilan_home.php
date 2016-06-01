@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Evaluasi Kinerja Dosen  </title>
+  <title>EKD Universitas Airlangga</title>
 
   <!-- Bootstrap core CSS -->
 
@@ -26,15 +26,7 @@
   <script src="<?php echo base_url();?>assets/js/jquery.min.js"></script>
   <script src="<?php echo base_url();?>assets/js/nprogress.js"></script>
 
-  <!--[if lt IE 9]>
-        <script src="../assets/js/ie8-responsive-file-warning.js"></script>
-        <![endif]-->
 
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
 
 </head>
 
@@ -50,19 +42,19 @@
         <div class="left_col scroll-view">
 
           <div class="navbar nav_title" style="border: 0;">
-            <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentellela Alela!</span></a>
+            <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Universitas Airlangga</span></a>
           </div>
           <div class="clearfix"></div>
 
           <!-- menu prile quick info -->
           <div class="profile">
-            <div class="profile_pic">
+            <!-- <div class="profile_pic">
               <img src="<?php echo base_url();?>assets/images/img.jpg" alt="..." class="img-circle profile_img">
-            </div>
-            <div class="profile_info">
-              <span>Selamat Datang,</span>
+            </div> -->
+            <!-- <div class="profile_info">
+              <span>Welcome,</span>
               <h2>John Doe</h2>
-            </div>
+            </div> -->
           </div>
           <!-- /menu prile quick info -->
 
@@ -72,39 +64,35 @@
           <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
 
             <div class="menu_section">
-              <h3>General</h3>
+              <h3>Menu</h3>
               <ul class="nav side-menu">
-                <li><a><i class="fa fa-home"></i> Home </span></a>
-                  
-                </li>
-                <li><a><i class="fa fa-edit"></i> Form <span class="fa fa-chevron-down"></span></a>
+              
+                <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
-                    
-                    <li><a href="form_advanced.html"> Pendidikan dan Pengajaran </a>
+                    <li><a href="form_advanced.html">Pendidikan dan Pengajaran </a>
                     </li>
-                    <li><a href="form_validation.html"> Pembimbingan </a>
+                    <li><a href="form_validation.html">Pembimbingan </a>
                     </li>
-                    <li><a href="form_wizards.html"> Penelitian </a>
+                    <li><a href="form_wizards.html">Penelitian </a>
                     </li>
-                    <li><a href="form_upload.html"> Pengabdian Masyarakat</a>
+                    <li><a href="form_upload.html">Pengabdian Masyarakat</a>
                     </li>
-                    <li><a href="form_buttons.html"> Publikasi Ilmiah Jurnal Nasional </a>
+                    <li><a href="form_buttons.html">Publikasi Ilmiah Jurnal Nasional </a>
                     </li>
-                    <li><a href="form_buttons.html"> Publikasi Ilmiah Jurnal Internasional </a>
+                    <li><a href="form_buttons.html">Publikasi Ilmiah Jurnal Internasional </a>
                     </li>
-                    <li><a href="form_buttons.html"> Pengalaman Penulisan Buku Ajar </a>
+                    <li><a href="form_buttons.html">Pengalaman Penulisan Buku Ajar </a>
                     </li>
-                    <li><a href="form_buttons.html"> Pengalaman Penulisan Buku Referensi </a>
+                    <li><a href="<?php echo base_url();?>index.php/bukureferensi">Pengalaman Penulisan Buku Referensi </a>
                     </li>
-                    <li><a href="form_buttons.html"> Pengalaman Oral Seminar Sebagai Pembicara Bidang Keahlian </a>
+                    <li><a href="form_buttons.html">Pengalaman Oral Seminar Sebagai Pembicara Bidang Keahlian </a>
                     </li>
-                    <li><a href="form_buttons.html"> Pengalaman Perolehan HAKI </a>
+                    <li><a href="form_buttons.html">Pengalaman Perolehan HAKI</a>
                     </li>
-                    <li><a href="form_buttons.html"> Sedang Mengikuti Tugas Belajar </a>
+                    <li><a href="form_buttons.html">Sedang Mengikuti Tugas Belajar</a>
                     </li>
                   </ul>
                 </li>
-
                 <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
                     <li><a href="general_elements.html">General Elements</a>
@@ -127,15 +115,32 @@
                     </li>
                   </ul>
                 </li>
-           
+                
+            
               </ul>
+            </div>
+            <div class="menu_section">
+             
             </div>
 
           </div>
           <!-- /sidebar menu -->
 
           <!-- /menu footer buttons -->
-        
+          <div class="sidebar-footer hidden-small">
+            <a data-toggle="tooltip" data-placement="top" title="Settings">
+              <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+              <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Lock">
+              <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+            </a>
+            <a data-toggle="tooltip" data-placement="top" title="Logout">
+              <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+            </a>
+          </div>
           <!-- /menu footer buttons -->
         </div>
       </div>
@@ -172,6 +177,79 @@
                 </ul>
               </li>
 
+              <li role="presentation" class="dropdown">
+                <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="badge bg-green">6</span>
+                </a>
+                <ul id="menu1" class="dropdown-menu list-unstyled msg_list animated fadeInDown" role="menu">
+                  <li>
+                    <a>
+                      <span class="image">
+                                        <img src="<?php echo base_url();?>assets/images/img.jpg" alt="Profile Image" />
+                                    </span>
+                      <span>
+                                        <span>John Smith</span>
+                      <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image">
+                                        <img src="<?php echo base_url();?>assets/images/img.jpg" alt="Profile Image" />
+                                    </span>
+                      <span>
+                                        <span>John Smith</span>
+                      <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image">
+                                        <img src="<?php echo base_url();?>assets/images/img.jpg" alt="Profile Image" />
+                                    </span>
+                      <span>
+                                        <span>John Smith</span>
+                      <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image">
+                                        <img src="<?php echo base_url();?>assets/images/img.jpg" alt="Profile Image" />
+                                    </span>
+                      <span>
+                                        <span>John Smith</span>
+                      <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="text-center">
+                      <a href="inbox.html">
+                        <strong>See All Alerts</strong>
+                        <i class="fa fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+
             </ul>
           </nav>
         </div>
@@ -183,31 +261,38 @@
       <!-- page content -->
       <div class="right_col" role="main">
 
+        <div class="">
+          <div class="page-title">
+            <div class="title_left">
+              <h3>
+                    <?php echo $judul; ?> <?php echo $sub_judul;?>
+              </h3>
+            </div>
         <!-- top tiles -->
-        <div class="row tile_count">
+      
+        <!-- /top tiles -->
+
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
-     
+            <div class="dashboard_graph">
+
               <div class="row x_title">
+               
                 <div class="col-md-6">
-                  <h3>Network Activities <small>Graph title sub-title</small></h3>
+                  
                 </div>
-
-
-              </div>
-        		<?php echo $this->load->view($content);?>
-		
+                      <?php echo $konten; ?>
+              </div>             
             </div>
           </div>
 
         </div>
+        <br />
 
-       
         <!-- footer content -->
         
         <!-- /footer content -->
       </div>
-
       <!-- /page content -->
     </div>
 
@@ -220,25 +305,18 @@
     <div id="notif-group" class="tabbed_notifications"></div>
   </div>
 
-  <div id="custom_notifications" class="custom-notifications dsp_none">
-    <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
-    </ul>
-    <div class="clearfix"></div>
-    <div id="notif-group" class="tabbed_notifications"></div>
-  </div>
-
   <script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
 
   <!-- gauge js -->
-  <script type="<?php echo base_url();?>assets/text/javascript" src="js/gauge/gauge.min.js"></script>
-  <script type="<?php echo base_url();?>assets/text/javascript" src="js/gauge/gauge_demo.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/js/gauge/gauge.min.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/js/gauge/gauge_demo.js"></script>
   <!-- bootstrap progress js -->
   <script src="<?php echo base_url();?>assets/js/progressbar/bootstrap-progressbar.min.js"></script>
   <!-- icheck -->
   <script src="<?php echo base_url();?>assets/js/icheck/icheck.min.js"></script>
   <!-- daterangepicker -->
-  <script type="<?php echo base_url();?>assets/text/javascript" src="js/moment/moment.min.js"></script>
-  <script type="<?php echo base_url();?>assets/text/javascript" src="js/datepicker/daterangepicker.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/js/moment/moment.min.js"></script>
+  <script type="text/javascript" src="<?php echo base_url();?>assets/js/datepicker/daterangepicker.js"></script>
   <!-- chart js -->
   <script src="<?php echo base_url();?>assets/js/chartjs/chart.min.js"></script>
 

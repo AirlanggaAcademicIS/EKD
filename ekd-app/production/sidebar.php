@@ -30,10 +30,8 @@
                     </li>
                     <li><a><i class="fa fa-edit"></i>Publikasi Ilmiah <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu" style="display: none">
-                            <li><a href="content-publikasiinternas-tambah.php">Tambah Data Publikasi Ilmiah Internasional</a></li>
-                            <li><a href="%">Tambah Data Publikasi Ilmiah Nasional</a></li>
-                            <li><a href="content-publikasiinternas-view.php">Lihat Data Publikasi Ilmiah Internasional</a></li>
-                            <li><a href="%">Lihat Data Publikasi Ilmiah Nasional</a></li>
+                            <li><a href="content-publikasi-tambah.php">Tambah Data Publikasi Ilmiah</a></li>
+                            <li><a href="content-publikasi-view.php">Lihat Data Publikasi Ilmiah</a></li>
                         </ul>
                     </li>
                     <li><a><i class="fa fa-edit"></i>Penulisan Buku <span class="fa fa-chevron-down"></span></a>
