@@ -406,9 +406,9 @@
                     DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function: <code>$().DataTable();</code>
                       
                   </p>
-                    <a href="pembimbingan.php"><button>Input</button></a>
-                    <button type="button">Edit</button>
-                    <button type="button">Cancel</button>
+                    <a href="pembimbingan.php"><button class="btn btn-primary">Input</button></a>
+                    <button class="btn btn-primary" type="button">Edit</button>
+                    <button class="btn btn-primary" type="button">Delete</button>
                   <table id="datatable" class="table table-striped table-bordered">
                     <thead>
                       <tr>
