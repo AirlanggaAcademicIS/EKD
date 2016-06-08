@@ -160,9 +160,8 @@
                         <th>Bukti SK</th>
                       </tr>
                     </thead>
-
+<
                       <tbody>
-                          
                       </tbody>
                   </table>
                 </div>
