@@ -85,40 +85,46 @@
               <div class="clearfix"></div>
 
                       <form action="proses-pengabdian-tambah.php" method="post" class="form-horizontal form-label-left" novalidate>
-
-                        <div class="item form-group">
-                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Tahun <span class="notblank">*</span>
+                          
+                          <div class="item form-group">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">Bukti Penugasan <span class="required">*</span>
                           </label>
                           <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input id="name" class="form-control col-md-7 col-xs-12" name="form-tahun"  required="required" type="text">
-                          </div>
+                          <select name="form-buktipenugasan" id="form-lingkup" class="form-control" required>
+                              <option value="">Pilih Bukti Penugasan </option>
+                              <?php include 'populate-buktipenugasan.php'; ?>
+                            </select>
+                            </div>
                         </div>
-                        <div class="item form-group">
-                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Judul <span class="required">*</span>
+                          
+                          <div class="item form-group">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">Periode <span class="required">*</span>
                           </label>
                           <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input type="text" id="email" name="form-judul" placeholder="Judul Kegiatan" required="required" class="form-control col-md-7 col-xs-12">
-                          </div>
+                          <select name="form-periode" id="form-lingkup" class="form-control" required>
+                              <option value="">Pilih Periode </option>
+                              <?php include 'populate-periode.php'; ?>
+                            </select>
+                            </div>
                         </div>
-                        <div class="item form-group">
-                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">Sumber Dana (Sebutkan semua) <span class="required">*</span>
+                          
+                          <div class="item form-group">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">Pengabdian Masyarakat <span class="required">*</span>
                           </label>
                           <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input type="text" id="number" name="form-sumberdana" required="required" data-validate-minmax="10,100" class="form-control col-md-7 col-xs-12">
-                          </div>
+                          <select name="form-pengabdianmasyarakat" id="form-lingkup" class="form-control" required>
+                              <option value="">Pilih Pengabdian Masyarakat </option>
+                              <?php include 'populate-pengabdianmasyarakat.php'; ?>
+                            </select>
+                            </div>
                         </div>
-                        <div class="item form-group">
-                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">Jumlah Rp. <span class="required">*</span>
-                          </label>
-                          <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input type="number" id="number" name="form-jumlahdana" required="required" class="form-control col-md-7 col-xs-12">
-                          </div>
-                        </div>
+                        
+                        
                         <div class="ln_solid"></div>
                         <div class="form-group">
                           <div class="col-md-6 col-md-offset-3">
                             <button type="submit" class="btn btn-primary">Cancel</button>
-                            <button id="send" type="submit" class="btn btn-success" name="form-submit" value="Submit">Submit</button>
+                            <button id="send" type="submit" class="btn btn-success" name="form-submit" value="Submit">Saya Mengikuti Kegiatan Ini</button>
                           </div>
                         </div>
                       </form>

@@ -38,7 +38,7 @@
 
 
 <body class="nav-md">
-
+<?php session_start(); ?>
   <div class="container body">
 
 
@@ -60,7 +60,13 @@
           <br />
 
           <!-- sidebar menu -->
-          <?php include 'sidebar.php'; ?>
+          <?php 
+                        if($_SESSION['keterangan']=="Dosen"){
+                            include 'sidebar-dosen.php';
+                        } else {
+                            include 'sidebar-tu.php';
+                        }
+                        ?>
           <!-- /sidebar menu -->
 
         </div>
@@ -112,7 +118,7 @@
                         <th>Judul</th>
                         <th>Sumber Dana</th>
                         <th>Jumlah (Rp.)</th>
-                          <th>SK</th>
+                          <th>No. SK</th>
                       </tr>
                     </thead>
 
