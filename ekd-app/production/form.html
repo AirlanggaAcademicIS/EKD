@@ -1,0 +1,32 @@
+<html>
+<head>
+<title></title>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+var counter = 0;
+$(function(){
+ $('p#add_field').click(function(){
+ counter += 1;
+ $('#container').append(
+ '<strong>Hobby No. ' + counter + '</strong><br />'
+ + '<input id="field_' + counter + '" name="dynfields[]' + '" type="text" /><br /><a href="#" class="remove_field">Remove</a><br />' );
+$('p#add_field').on("click",".remove_field", function(e){ //user click on remove text
+        e.preventDefault(); $(this).parent('div').remove(); x--;
+    })
+ });
+});
+</script>
+
+<body>
+ <h1>Add your Hobbies</h1>
+ <form method="post" action="">
+
+ <div id="container">
+ <p id="add_field"><a href="#"><span>Click To Add Hobbies</span></a></p>
+ </div>
+
+ <input type="submit" name="submit_val" value="Submit" />
+ </form>
+
+</body>
+</html>
